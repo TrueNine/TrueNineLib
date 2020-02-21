@@ -6,4 +6,7 @@
  * @date 2020 - 02 - 21:13:20
  */
 public class br {
+    public static void main(String[] args) {
+        System.out.println("测试语句");
+    }
 }
