@@ -1,6 +1,6 @@
 # 说明
 
-***当前版本: 1.2.3.1.18***
+***当前版本: 1.3.1.0.18***
 > 大章节,小章节,课时,是否完成(1/0),第几次推送
 
 ```text
@@ -19,9 +19,9 @@
 ```text
 how2j.cn 的Java全栈教程
 ```
-> 进度: 变量
+> 进度: 变量//基本变量类型
 
-官网URL: [how2j](https://www.how2j.cn/)
+官网URL: [https://www.how2j.cn/](https://www.how2j.cn/)
 
 ```text
 尚硅谷的 Git&GitHub 教程
