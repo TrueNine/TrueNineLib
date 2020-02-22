@@ -1,6 +1,6 @@
 # 说明
 
-***当前版本: 1.3.2.1.21***
+***当前版本: 1.3.2.1.22***
 > 大章节,小章节,课时,是否完成(1/0),第几次推送
 
 ```text
@@ -16,18 +16,14 @@
 
 # 目前拥有的笔记
 
-```text
-how2j.cn 的Java全栈教程
-```
-> 进度: 变量//基本变量类型
+## how2j.cn 的Java全栈教程
+> 进度: 变量/基本变量类型
 
-官网URL: [https://www.how2j.cn/](https://www.how2j.cn/)
+官网URL: [链接](https://www.how2j.cn/)
 
-```text
-尚硅谷的 Git&GitHub 教程
-```
+## 尚硅谷的 Git&GitHub 教程
 > 进度: GitHub SSH 免密登录
 
-官网URL: [http://www.atguigu.com/](http://www.atguigu.com/)
+官网URL: [链接](http://www.atguigu.com/)
 
-哔哩哔哩视频URL: [https://www.bilibili.com/video/av24441039?from=search&seid=1443581922472429623](https://www.bilibili.com/video/av24441039?from=search&seid=1443581922472429623)
+哔哩哔哩视频URL: [链接](https://www.bilibili.com/video/av24441039?from=search&seid=1443581922472429623)
