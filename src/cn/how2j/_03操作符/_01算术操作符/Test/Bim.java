@@ -1,4 +1,4 @@
-package cn.how2j._03操作符.Test;
+package cn.how2j._03操作符._01算术操作符.Test;
 
 import java.util.Scanner;
 
