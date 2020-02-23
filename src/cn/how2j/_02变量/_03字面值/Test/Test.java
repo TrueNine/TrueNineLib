@@ -1,4 +1,4 @@
-package _02变量._03字面值.Test;
+package cn.how2j._02变量._03字面值.Test;
 
 /**
  * 类作用: 测试字面值

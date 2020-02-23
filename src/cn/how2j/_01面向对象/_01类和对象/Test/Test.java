@@ -1,4 +1,4 @@
-package _01面向对象._01类和对象.Test;
+package cn.how2j._01面向对象._01类和对象.Test;
 
 /**
  * 类作用: 设计物品类

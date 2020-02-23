@@ -1,4 +1,4 @@
-package _02变量._02基本变量类型.Test;
+package cn.how2j._02变量._02基本变量类型.Test;
 
 /**
  * 类作用:

@@ -1,4 +1,4 @@
-package _01面向对象._03方法.Test;
+package cn.how2j._01面向对象._03方法.Test;
 
 /**
  * 类作用: 英雄类
