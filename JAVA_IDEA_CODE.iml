@@ -10,7 +10,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/yzdzlib.jar!/" />
+          <root url="jar://D:/YzdzLib/out/artifacts/yzdzlib/yzdzlib.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
