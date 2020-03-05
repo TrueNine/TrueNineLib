@@ -10,10 +10,12 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://D:/YzdzLib/out/artifacts/yzdzlib/yzdzlib.jar!/" />
+          <root url="jar://D:/YzdzLib/out/artifacts/YzdzLib_jar/YzdzLib_jar.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://D:/YzdzLib/out/artifacts/YzdzLib_jar/YzdzLib_jar.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>

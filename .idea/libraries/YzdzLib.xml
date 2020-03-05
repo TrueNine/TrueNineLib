@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="YzdzLib">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../YzdzLib/out/artifacts/YzdzLib/YzdzLib.jar!/" />
+    </SOURCES>
+  </library>
+</component>

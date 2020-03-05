@@ -11,6 +11,6 @@ import cn.yzdz.random.RandomNumber;
  */
 public class Test {
     public static void main(String[] args) {
-        RandomNumber randomNumber = new RandomNumber();
+        RandomNumber.randomInt(1,true);
     }
 }
