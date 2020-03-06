@@ -12,11 +12,9 @@
 | Markdown笔记 | 关于代码,一些技术的笔记 |
 | Markdown笔记 / 数据结构与算法 | 存放一些碰到的相关笔记 |
 | Markdown笔记 / 设计模式 | 存放一些有关设计模式的相关笔记 |
-| lib | 引入的一些工具类的 jar 包 |
 | src | Java代码,分章节显示 |
 | src / test / yzdz | 测试文件,用于测试工具类 |
 | manual.md | 说明文件 |
-| log.md | 日志文件 |
 
 # 笔记来源
 
@@ -36,4 +34,5 @@
 > 进度: Java高级 / 设计模式
 
 官网URL: [链接](https://www.shsxt.com/)
+
 哔哩哔哩视频URL: [链接](https://www.bilibili.com/video/av92147257?p=44)
