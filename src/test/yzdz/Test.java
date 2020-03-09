@@ -1,6 +1,7 @@
 package test.yzdz;
 
 import cn.yzdz.random.RandomNumber;
+import cn.yzdz.random.RandomString;
 
 /**
  * 类作用: 测试类
@@ -12,5 +13,11 @@ import cn.yzdz.random.RandomNumber;
 public class Test {
     public static void main(String[] args) {
         RandomNumber.randomInt(1,true);
+        RandomString randomString = new RandomString();
+
+        System.out.println(randomString.numberAndLetterAndSign(1024));
+        System.out.println(randomString.numberAndLetterAndSign(1024));
+        System.out.println(randomString.numberAndLetterAndSign(1024));
+        System.out.println(randomString.numberAndLetterAndSign(1024));
     }
 }
