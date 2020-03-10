@@ -1,5 +1,6 @@
 package test.yzdz;
 
+import cn.yzdz.YzdzList;
 import cn.yzdz.random.RandomNumber;
 import cn.yzdz.random.RandomString;
 
@@ -12,12 +13,7 @@ import cn.yzdz.random.RandomString;
  */
 public class Test {
     public static void main(String[] args) {
-        RandomNumber.randomInt(1,true);
         RandomString randomString = new RandomString();
-
-        System.out.println(randomString.numberAndLetterAndSign(1024));
-        System.out.println(randomString.numberAndLetterAndSign(1024));
-        System.out.println(randomString.numberAndLetterAndSign(1024));
-        System.out.println(randomString.numberAndLetterAndSign(1024));
+        System.out.println(randomString.numberAndLetterAndSignAndChinese(100));
     }
 }
