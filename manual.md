@@ -18,21 +18,8 @@
 
 # 笔记来源
 
-## how2j.cn 的Java全栈教程
-> 进度: 接口与继承/重写
-
-官网URL: [链接](https://www.how2j.cn/)
-
-## 尚硅谷 Git&GitHub 教程
-> 进度: GitHub SSH 免密登录
-
-官网URL: [链接](http://www.atguigu.com/)
-
-哔哩哔哩视频URL: [链接](https://www.bilibili.com/video/av24441039?from=search&seid=1443581922472429623)
-
-## 尚学堂 Java 300 集
-> 进度: Java高级 / 设计模式
-
-官网URL: [链接](https://www.shsxt.com/)
-
-哔哩哔哩视频URL: [链接](https://www.bilibili.com/video/av92147257?p=44)
+| 名称 | 官网/根来源 | 视频链接 |
+|:---:|:---:|:---:|
+| how2j | [链接](https://www.how2j.cn/) |   |
+| 尚硅谷Git&GitHub | [官网](http://www.atguigu.com/) | [B站](https://www.bilibili.com/video/av24441039?from=search&seid=1443581922472429623) |
+| 尚学堂 Java 300 集 | [官网](https://www.shsxt.com/) | [B站](https://www.bilibili.com/video/av92147257?p=44) |
