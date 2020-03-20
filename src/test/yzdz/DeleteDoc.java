@@ -1,5 +1,7 @@
 package test.yzdz;
 
+import org.junit.*;
+
 /**
  * 练习,移除注释
  *
@@ -24,5 +26,11 @@ public class DeleteDoc {
                 System.out.print("\r");
             }
         }
+    }
+
+    private static String str() {
+        String strs = "213124";
+        Assert.assertEquals(strs,"12");
+        return strs;
     }
 }
