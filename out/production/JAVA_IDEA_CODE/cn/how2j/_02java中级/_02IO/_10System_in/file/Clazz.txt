@@ -1,13 +1,13 @@
 
 /**
- * @author @author@
+ * trueNine trueNine@
  */
-public class @className@ {
-    String @stringName@;
-    String @stringName@;
-    int @intName@;
+public class test {
+    String str;
+    String str;
+    int integers;
 
-    @className@(int @intName@) {
-        this.@intName@ = @intName@;
+    test(int integers) {
+        this.integers = integers;
     }
 }
