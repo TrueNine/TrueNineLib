@@ -1,0 +1,13 @@
+
+/**
+ * @author @author@
+ */
+public class @className@ {
+    String @stringName@;
+    String @stringName@;
+    int @intName@;
+
+    @className@(int @intName@) {
+        this.@intName@ = @intName@;
+    }
+}
