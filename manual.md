@@ -15,6 +15,8 @@
 | src | Java代码,分章节显示 |
 | src / test / yzdz | 测试文件,用于测试工具类 |
 | manual.md | 说明文件 |
+| lib | 一些需要的 jar 包 |
+| lib/javaCode | JDK源码 |
 
 # 笔记来源
 
