@@ -1,5 +1,6 @@
 package test.yzdz.swing;
 
+import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -10,9 +11,6 @@ import java.util.Set;
  */
 public class test {
     public static void main(String[] args) {
-            Set<String> set = new LinkedHashSet<>();
-        set.add("张三");
-        set.add("李四");
-        System.out.println(set.toString());
+
     }
 }
