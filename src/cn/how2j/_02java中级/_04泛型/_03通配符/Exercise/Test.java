@@ -1,4 +1,4 @@
-package cn.how2j._04泛型._03通配符.Exercise;
+package cn.how2j._02java中级._04泛型._03通配符.Exercise;
 
 import cn.how2j.Hero;
 
