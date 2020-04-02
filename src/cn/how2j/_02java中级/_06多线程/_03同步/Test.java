@@ -11,41 +11,20 @@ public class Test {
     public static void main(String[] args) throws InterruptedException {
         // 声明一个不可变的对象,作为锁
         final Object lock = new Object();
-
-
-
         // 稍后修改这个值
         Number number = new Number();
-
-
         // 声明一千条线程
         int max = 1000;
         Thread[] add = new Thread[max];
         Thread[] cut = new Thread[max];
         for (int i = 0; i < max; i++) {
             Thread addThread = new Thread(() -> {
-                synchronized (lock) {
-                    number.setNumber(number.number + 1);
-                }
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                number.setNumber(number.number + 1);
             });
             Thread cutThread = new Thread(() -> {
-                synchronized (lock) {
-                    number.setNumber(number.number - 1);
-                }
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                number.setNumber(number.number - 1);
             });
             // 启动线程,并添加到当前数组中
-            addThread.start();
-            cutThread.start();
             add[i] = addThread;
             cut[i] = cutThread;
         }
@@ -53,10 +32,14 @@ public class Test {
         // 先增加,再减除
         // 将线程加入到当前线程
         for (Thread temp : add) {
+            temp.start();
             temp.join();
+            System.out.println(number.getNumber());
         }
         for (Thread temp : cut) {
+            temp.start();
             temp.join();
+            System.out.println(number.getNumber());
         }
 
         System.out.println(number.getNumber());
