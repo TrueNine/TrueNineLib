@@ -2,6 +2,9 @@ package cn.how2j._02java中级._06多线程._03同步;
 
 /**
  * 测试一些同步方法
+ * 测试: 同一环境下,两种线程
+ * 同时修改一个方法的值
+ * 声明一把锁,只有持有这把锁才能修改值
  *
  * @author TrueNine
  * @version 1.0
@@ -9,45 +12,45 @@ package cn.how2j._02java中级._06多线程._03同步;
  */
 public class Test {
     public static void main(String[] args) throws InterruptedException {
-        // 声明一个不可变的对象,作为锁
+        // 声明一把锁
         final Object lock = new Object();
-        // 稍后修改这个值
+
+        // 声明两种线程,但持有的锁是一致的
         Number number = new Number();
-        // 声明一千条线程
-        int max = 1000;
-        Thread[] add = new Thread[max];
-        Thread[] cut = new Thread[max];
+
+        // 声明一个线程数组,存放两种线程
+        int max = 1024;
+        Thread[] adds = new Thread[max];
+        Thread[] cuts = new Thread[max];
         for (int i = 0; i < max; i++) {
-            Thread addThread = new Thread(() -> {
-                number.setNumber(number.number + 1);
+            adds[i] = new Thread(() -> {
+                // 持有该对象的锁才能进行操作
+                synchronized (lock) {
+                    number.add();
+                }
             });
-            Thread cutThread = new Thread(() -> {
-                number.setNumber(number.number - 1);
+            cuts[i] = new Thread(() -> {
+                synchronized (lock) {
+                    number.cut();
+                }
             });
-            // 启动线程,并添加到当前数组中
-            add[i] = addThread;
-            cut[i] = cutThread;
+        }
+        // 先启动 add 线程,再启动 cut 线程
+        for (int i = 0; i < max; i++) {
+            // 暂停 10 millis
+            Thread.sleep(1);
+            adds[i].start();
+            cuts[i].start();
         }
 
-        // 先增加,再减除
-        // 将线程加入到当前线程
-        for (Thread temp : add) {
-            temp.start();
-            temp.join();
-            System.out.println(number.getNumber());
-        }
-        for (Thread temp : cut) {
-            temp.start();
-            temp.join();
-            System.out.println(number.getNumber());
-        }
-
+        // 测试数据的准确性
         System.out.println(number.getNumber());
     }
 }
 
 class Number {
-    int number = 1024;
+
+    private int number = 1024;
 
     public int getNumber() {
         return number;
@@ -55,5 +58,11 @@ class Number {
 
     public void setNumber(int number) {
         this.number = number;
+    }
+    public void add() {
+        number += 1;
+    }
+    public void cut() {
+        number -= 1;
     }
 }
