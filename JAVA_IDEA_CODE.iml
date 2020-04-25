@@ -10,11 +10,11 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://E:/yzdzclasslib/out/artifacts/YzdzLib_jar/YzdzLib_jar.jar!/" />
+          <root url="jar://$MODULE_DIR$/../yzdzclasslib/out/artifacts/YzdzLib_jar/YzdzLib_jar.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://E:/yzdzclasslib/out/artifacts/YzdzLib_jar/YzdzLib_jar.jar!/" />
+          <root url="jar://$MODULE_DIR$/../yzdzclasslib/out/artifacts/YzdzLib_jar/YzdzLib_jar.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -31,6 +31,15 @@
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/junit-4.9.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/sqlitejdbc-v056.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
