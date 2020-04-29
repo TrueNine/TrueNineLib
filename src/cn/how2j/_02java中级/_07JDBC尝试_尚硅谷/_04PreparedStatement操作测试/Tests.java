@@ -1,6 +1,6 @@
 package cn.how2j._02java中级._07JDBC尝试_尚硅谷._04PreparedStatement操作测试;
 
-import cn.how2j._02java中级._07JDBC尝试_尚硅谷.utils.JDBCUtils;
+import cn.how2j._02java中级._07JDBC尝试_尚硅谷.linkDataBaseUtils.JDBCUtils;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -27,7 +27,7 @@ public class Tests {
 
         try {
             // 1. 获取数据库连接
-            conn = JDBCUtils.getConnection();
+            conn = JDBCUtils.getConnection("cn\\how2j\\_02java中级\\_07JDBC尝试_尚硅谷\\sqlplus.properties");
 
             // 2. 预编译SQL语句,返回 preparedStatement 实例
             String sql = "UPDATE customers SET `name` = ? WHERE `id` = ?";
@@ -53,8 +53,9 @@ public class Tests {
      * 测试调用封装的方法,进行通用增加,删除,修改
      */
     @Test
-    public void t2() throws SQLException, IOException, ClassNotFoundException, IllegalAccessException, InstantiationException {
+    public void t2() throws SQLException, IOException, ClassNotFoundException {
+        String path = "cn/how2j/_02java中级/_07JDBC尝试_尚硅谷/sqlplus.properties";
         String sql = "UPDATE customers SET `name` = ? WHERE `id` = ?";
-        JDBCUtils.update(sql,"张三",18);
+        JDBCUtils.update(path,sql,"张三",18);
     }
 }

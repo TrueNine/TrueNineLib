@@ -1,6 +1,6 @@
 package cn.how2j._02java中级._07JDBC尝试_尚硅谷._05查询;
 
-import cn.how2j._02java中级._07JDBC尝试_尚硅谷.utils.JDBCUtils;
+import cn.how2j._02java中级._07JDBC尝试_尚硅谷.linkDataBaseUtils.JDBCUtils;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -18,7 +18,7 @@ import java.sql.*;
 public class Tests {
 
     @Test
-    public void t1() throws InstantiationException, IllegalAccessException {
+    public void t1() {
 
         Connection conn = null;
         PreparedStatement ps = null;
@@ -26,7 +26,7 @@ public class Tests {
 
         try {
             // 获取连接
-            conn = JDBCUtils.getConnection();
+            conn = JDBCUtils.getConnection("");
 
             // 预编译SQL语句
             String sql = "SELECT `id`,`name`,`email`,`birth` FROM customers WHERE id = ?;";
@@ -83,7 +83,7 @@ public class Tests {
      * @throws ClassNotFoundException 类解析异常
      */
     @Test
-    public void t2() throws SQLException, IOException, ClassNotFoundException, IllegalAccessException, InstantiationException {
+    public void t2() throws SQLException, IOException, ClassNotFoundException {
         String sql = "SELECT * FROM customers WHERE `id` = ?";
 
         Customers select = select(sql, 13);
@@ -91,9 +91,9 @@ public class Tests {
     }
 
 
-    public Customers select(String sql,Object... args) throws SQLException, IOException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+    public Customers select(String sql,Object... args) throws SQLException, IOException, ClassNotFoundException {
         // 连接数据库
-        Connection conn = JDBCUtils.getConnection();
+        Connection conn = JDBCUtils.getConnection("");
 
         // 预编译SQL语句
         PreparedStatement ps = conn.prepareStatement(sql);
