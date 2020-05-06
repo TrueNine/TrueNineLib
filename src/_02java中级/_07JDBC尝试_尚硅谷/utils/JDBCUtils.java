@@ -13,7 +13,7 @@ import java.util.Properties;
 public class JDBCUtils {
 
     public static Connection getConnection() throws IOException, ClassNotFoundException, IllegalAccessException, InstantiationException, SQLException {
-        String path = "cn\\how2j\\_02java中级\\_07JDBC尝试_尚硅谷\\sqlplus.properties";
+        String path = "_02java中级/_07JDBC尝试_尚硅谷/sqlplus.properties";
         InputStream is = ClassLoader.getSystemClassLoader().getResourceAsStream(path);
 
         // 加载配置文件

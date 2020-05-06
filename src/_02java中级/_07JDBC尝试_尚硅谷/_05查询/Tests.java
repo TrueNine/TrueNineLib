@@ -31,14 +31,14 @@ public class Tests {
             // 预编译SQL语句
             String sql = "SELECT `id`,`name`,`email`,`birth` FROM customers WHERE id = ?;";
             ps = conn.prepareStatement(sql);
-            ps.setInt(1,1);
+            ps.setInt(1, 1);
 
             // 执行,返回一个结果集
             result = ps.executeQuery();
 
             // 处理结果集
             // 判断结果集的下一条是否有数据
-            if (result.next())  {
+            if (result.next()) {
                 // 获取当前这条数据的各个字段值
                 int id = result.getInt(1);
                 String name = result.getString(2);
@@ -57,7 +57,7 @@ public class Tests {
                 // 2. 封装在数组,也不是特别好
 
                 // 3. 直接封装为一个类的对象,ORM 关系映射
-                Customers customers = new Customers(id,name,email, birth ,new Object());
+                Customers customers = new Customers(id, name, email, birth, new Object());
                 System.out.println("映射为对象: \n" + customers);
             } else {
                 System.out.println("没有结果");
@@ -70,7 +70,7 @@ public class Tests {
             e.printStackTrace();
         } finally {
             // 关闭资源
-            JDBCUtils.closeResource(conn,ps,result);
+            JDBCUtils.closeResource(conn, ps, result);
         }
     }
 
@@ -91,14 +91,14 @@ public class Tests {
     }
 
 
-    public Customers select(String sql,Object... args) throws SQLException, IOException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+    public Customers select(String sql, Object... args) throws SQLException, IOException, ClassNotFoundException, InstantiationException, IllegalAccessException {
         // 连接数据库
         Connection conn = JDBCUtils.getConnection();
 
         // 预编译SQL语句
         PreparedStatement ps = conn.prepareStatement(sql);
         for (int i = 0; i < args.length; i++) {
-            ps.setObject(i + 1,args[i]);
+            ps.setObject(i + 1, args[i]);
         }
 
         // 得到结果集
@@ -147,7 +147,7 @@ public class Tests {
  * 表中的一个字段,对应 Java 类的一个属性
  */
 class Customers {
-    
+
 
     private int id;
     private String name;
@@ -159,7 +159,7 @@ class Customers {
 
     }
 
-    public Customers(int id, String name, String email, Date birth ,Object photo) {
+    public Customers(int id, String name, String email, Date birth, Object photo) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -170,7 +170,7 @@ class Customers {
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof Customers) {
-            return this.id == ((Customers)obj).id;
+            return this.id == ((Customers) obj).id;
         } else {
             return false;
         }
