@@ -62,7 +62,7 @@
     <inspection_tool class="AlibabaUseQuietReferenceNotation" enabled="false" level="MAJOR" enabled_by_default="false" />
     <inspection_tool class="AlibabaUseRightCaseForDateFormat" enabled="false" level="CRITICAL" enabled_by_default="false" />
     <inspection_tool class="AutoCloseableResource" enabled="true" level="WARNING" enabled_by_default="true">
-      <option name="METHOD_MATCHER_CONFIG" value="java.util.Formatter,format,java.io.Writer,append,com.google.common.base.Preconditions,checkNotNull,org.hibernate.Session,close,java.io.PrintWriter,printf,java.sql.DriverManager,getConnection,cn.how2j._02java中级._07JDBC尝试_尚硅谷.linkDataBaseUtils.JDBCUtils,getConnection" />
+      <option name="METHOD_MATCHER_CONFIG" value="java.util.Formatter,format,java.io.Writer,append,com.google.common.base.Preconditions,checkNotNull,org.hibernate.Session,close,java.io.PrintWriter,printf,java.sql.DriverManager,getConnection,cn.how2j._02java中级._07JDBC尝试_尚硅谷.linkDataBaseUtils.JDBCUtils,getConnection,java.net.ServerSocket,accept" />
     </inspection_tool>
     <inspection_tool class="ChannelResource" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="insideTryAllowed" value="false" />

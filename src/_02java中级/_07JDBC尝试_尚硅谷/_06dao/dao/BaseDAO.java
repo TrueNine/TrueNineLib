@@ -90,7 +90,7 @@ public abstract class BaseDAO {
     /**
      * 查询一组数据,返回一个 List
      *
-     * @param type 银蛇类型
+     * @param type 映射类型
      * @param conn 连接器
      * @param sql  SQL语句
      * @param args SQL语句参数

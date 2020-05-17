@@ -17,10 +17,10 @@ public class Test2 {
         // 创建一个线程池
         ThreadPoolExecutor executor = new ThreadPoolExecutor(
                 10
-                ,15
-                ,60
+                , 15
+                , 60
                 , TimeUnit.SECONDS
-                ,new LinkedBlockingQueue<Runnable>()
+                , new LinkedBlockingQueue<Runnable>()
         );
 
         // 往线程池内添加任务
